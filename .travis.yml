@@ -2,3 +2,6 @@ language: go
 
 go:
 - 1.18
+
+install: cd ci-lab && go mod download
+build: go test ./...
